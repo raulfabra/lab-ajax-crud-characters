@@ -1,6 +1,4 @@
 
-const axios = require("axios");
-
 class APIHandler {
   constructor (baseUrl) {
     this.BASE_URL = baseUrl;
@@ -26,5 +24,3 @@ class APIHandler {
     return axios.post(`${this.BASE_URL}/characters/${id}`)
   }
 }
-
-module.exports = APIHandler;
